@@ -1,0 +1,850 @@
+@font-face{
+  src: url(fonts/Lato-Bold.ttf);
+  font-family: Lato-Bold;
+}
+@font-face{
+  src: url(fonts/Lato-Regular.ttf);
+  font-family: Lato-Regular;
+}
+@font-face{
+  src: url(fonts/MavenPro-Regular.ttf);
+  font-family: MavenPro-Regular;
+}
+/*=========================================================
+                        common css
+=========================================================*/
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background-color: #000;
+}
+a{
+  text-decoration: none;
+}
+ul,li{
+  list-style: none;
+}
+::after,::before{
+  display: block;
+  content: "";
+}
+
+/*=========================================================
+                        header section
+=========================================================*/
+.header{
+  background-color: #323232;
+  max-width: 1020px;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  
+}
+.header .container{
+  width: 50%;
+  margin: auto;
+  overflow: hidden;
+  
+  
+}
+.header .container nav:nth-child(1){
+  margin-left: 28px;
+}
+.header .container nav ul li:nth-child(2){
+  font-size: 8px;
+}
+.header .container nav ul{
+   float:left;
+}
+.header .container nav ul li{
+  display: inline-block;
+  padding: 8px;
+  margin-top: 25px;
+  font-family: Lato-Bold;
+  font-size: 10px;
+}
+.header .container nav ul li a{
+  color: #d2d2d2;
+  text-transform: uppercase;
+}
+.header .container nav ul li a:hover{
+  color: #2eb398;
+}
+.header .container .icon{
+  height: 50;
+  width: 62px;
+  float: left;
+  position: relative;
+  margin: 13px 45px 0px;
+
+}
+.header .container .icon .icon1{
+  height: 0px;
+  width: 0px;
+  border-top: 50px solid #d2d2d2;
+  border-left: 30.5px solid transparent;
+  border-right: 30.5px solid transparent;
+ 
+}
+.header .container .icon .icon2{
+  height: 0px;
+  width: 0px;
+  border-top: 45px solid #323232;
+  border-left: 27px solid transparent;
+  border-right: 27px solid transparent;
+  margin: auto;
+  position: absolute;
+  top: 2px;
+  left: 3px;
+
+}
+.header .container .icon .icon3{
+  height: 0px;
+  width: 0px;
+  border-top: 10px solid #d2d2d2;
+  border-left: 31px solid transparent;
+  border-right: 31px solid transparent;
+  margin: auto;
+  position: absolute;
+  top: .1px;
+  left: -4.7px;
+  right: -3px;
+
+}
+.header .container .icon .icon4{
+  height: 0px;
+  width: 0px;
+  border-top: 10px solid #323232;
+  border-left: 33px solid transparent;
+  border-right: 33px solid transparent;
+  margin: auto;
+  position: absolute;
+  top: -1.6px;
+  left: -4.7px;
+  right: -3px;
+
+}
+.header::after{
+  height: 0px;
+  width: 0px;
+  border-top: 28px solid #323232;
+  border-left: 45px solid transparent;
+  border-right: 45px solid transparent;
+  position: absolute;
+  top: 100%;
+  right: 468px; 
+}
+/*=========================================================
+                        hexagon section
+=========================================================*/
+
+.hexagon_section{
+  width: 100%;
+  max-width: 1020px;
+  margin: auto;
+  background-color: #fff;
+  padding-bottom: 10px;
+}
+.hexagon_section .top_border{
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.hexagon_section .top_border .br1,.br2{
+  width: 40%;
+
+}
+.hexagon_section .top_border .br1 hr,.br2 hr{
+  margin-top: 10px;
+  border-bottom: 1px solid #e4e9eb;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.hexagon_section .top_border .br1 hr{
+  margin-right: 10px;
+}
+.hexagon_section .top_border .br2{
+  margin-left: 90px;
+}
+.hex_pic{
+  margin-top: 80px;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+
+}
+
+.hex_pic .hexa h1{
+  border-right: 1px solid #e4e9eb;
+  height: 107px;
+  position:absolute; 
+  bottom: 24%; 
+}
+.hex_pic .hexa h3{
+  border-right: 1px solid #e4e9eb;
+  height: 107px;
+  position:absolute; 
+  bottom: 8.5%; 
+  left: 9%;
+}
+.hex_pic .hexa h2{
+  border-right: 1px solid #e4e9eb;
+  height: 107px;
+  position:absolute; 
+  bottom: 24%; 
+  right: 90px;
+}
+.hex_pic .hexa h4{
+  border-right: 1px solid #e4e9eb;
+  height: 107px;
+  position:absolute; 
+  bottom: 8.5%; 
+  right: 90px;
+}
+
+/* ================ flex trial start ================== */
+.hex_pic .hex_pic1 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+
+}
+.hex_pic .hex_pic2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -25px;
+  margin-left:20px;
+  
+}
+.hex_pic .hex_pic3 {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: -25px;
+  
+}
+/* ================ flex trial end ================== */
+
+
+
+
+
+/* ========================================= hexagon 1 ===========================================  */
+.hex_pic .hexa1{
+  width: 180px;
+  height:205px;
+  /* display: inline-block; */
+  background-image: url(images/h1.png);
+  background-size: cover;
+  background-position: center;
+  margin-right:20px;
+  margin-left:20px;
+  position: relative;
+  z-index: 223;
+  overflow: hidden;
+}
+.hex_pic .hexa1::before{
+  width: 0px;
+  height: 0px;
+  border-bottom: 50px solid transparent;
+  border-left: 90px solid #fff;
+  border-right: 90px solid #fff;
+}
+.hex_pic .hexa1::after{
+  width: 0px;
+  height: 0px;
+  border-top: 50px solid transparent;
+  border-left: 90px solid #fff;
+  border-right: 90px solid #fff;
+  position: absolute;
+  top: 76%;
+  left: 0px;
+}
+/* ========================================= hexagon 2 ===========================================  */
+.hex_pic .hexa2{
+  width: 180px;
+  height:205px;
+  background-image: url(images/h2.png);
+  background-size: cover;
+  background-position: center;
+  margin-right:20px;
+  position: relative;
+}
+.hex_pic .hexa2::before{
+  width: 0px;
+  height: 0px;
+  border-bottom: 50px solid transparent;
+  border-left: 90px solid #fff;
+  border-right: 90px solid #fff;
+}
+.hex_pic .hexa2::after{
+  width: 0px;
+  height: 0px;
+  border-top: 50px solid transparent;
+  border-left: 90px solid #fff;
+  border-right: 90px solid #fff;
+  position: absolute;
+  top: 76%;
+  left: 0px;
+}
+/* ========================================= hexagon 3 ===========================================  */
+.hex_pic .hexa3{
+  width: 180px;
+  height:205px;
+  background-image: url(images/h3.png);
+  background-size: cover;
+  background-position: center;
+  margin-right:20px;
+  position: relative;
+}
+.hex_pic .hexa3::before{
+  width: 0px;
+  height: 0px;
+  border-bottom: 50px solid transparent;
+  border-left: 90px solid #fff;
+  border-right: 90px solid #fff;
+}
+.hex_pic .hexa3::after{
+  width: 0px;
+  height: 0px;
+  border-top: 50px solid transparent;
+  border-left: 90px solid #fff;
+  border-right: 90px solid #fff;
+  position: absolute;
+  top: 76%;
+  left: 0px;
+}
+/* ========================================= hexagon 4 ===========================================  */
+.hex_pic .hexa4{
+  width: 180px;
+  height:205px;
+  background-image: url(images/h4.png);
+  background-size: cover;
+  background-position: center;
+  margin-right:20px;
+  position: relative;
+}
+.hex_pic .hexa4::before{
+  width: 0px;
+  height: 0px;
+  border-bottom: 50px solid transparent;
+  border-left: 90px solid #fff;
+  border-right: 90px solid #fff;
+}
+.hex_pic .hexa4::after{
+  width: 0px;
+  height: 0px;
+  border-top: 50px solid transparent;
+  border-left: 90px solid #fff;
+  border-right: 90px solid #fff;
+  position: absolute;
+  top: 76%;
+  left: 0px;
+}
+/* ========================================= hexagon 5 ===========================================  */
+.hex_pic .hexa5{
+  width: 180px;
+  height:205px;
+  /* display: inline-block; */
+  background-image: url(images/h5.png);
+  background-size: cover;
+  background-position: center;
+  margin-right:20px;
+  position: relative;
+
+}
+.hex_pic .hexa5::before{
+  width: 0px;
+  height: 0px;
+  border-bottom: 50px solid transparent;
+  border-left: 90px solid #fff;
+  border-right: 90px solid #fff;
+}
+.hex_pic .hexa5::after{
+  width: 0px;
+  height: 0px;
+  border-top: 50px solid transparent;
+  border-left: 90px solid #fff;
+  border-right: 90px solid #fff;
+  position: absolute;
+  top: 76%;
+  left: 0px;
+}
+/* ========================================= hexagon 6 ===========================================  */
+.hex_pic .hexa6{
+  width: 180px;
+  height:205px;
+  background-image: url(images/h6.png);
+  background-size: cover;
+  background-position: center;
+  margin-right:20px;
+  position: relative;
+}
+.hex_pic .hexa6::before{
+  width: 0px;
+  height: 0px;
+  border-bottom: 50px solid transparent;
+  border-left: 90px solid #fff;
+  border-right: 90px solid #fff;
+}
+.hex_pic .hexa6::after{
+  width: 0px;
+  height: 0px;
+  border-top: 50px solid transparent;
+  border-left: 90px solid #fff;
+  border-right: 90px solid #fff;
+  position: absolute;
+  top: 76%;
+  left: 0px;
+}
+/* ========================================= hexagon 7 ===========================================  */
+.hex_pic .hexa7{
+  width: 180px;
+  height:205px;
+  background-image: url(images/h7.png);
+  background-size: cover;
+  background-position: center;
+  margin-right:20px;
+  position: relative;
+}
+.hex_pic .hexa7::before{
+  width: 0px;
+  height: 0px;
+  border-bottom: 50px solid transparent;
+  border-left: 90px solid #fff;
+  border-right: 90px solid #fff;
+}
+.hex_pic .hexa7::after{
+  width: 0px;
+  height: 0px;
+  border-top: 50px solid transparent;
+  border-left: 90px solid #fff;
+  border-right: 90px solid #fff;
+  position: absolute;
+  top: 76%;
+  left: 0px;
+}
+/* ========================================= hexagon 8 ===========================================  */
+.hex_pic .hexa8{
+  width: 180px;
+  height:205px;
+  background-image: url(images/h8.png);
+  background-size: cover;
+  background-position: center;
+  margin-right:20px;
+  position: relative;
+}
+.hex_pic .hexa8::before{
+  width: 0px;
+  height: 0px;
+  border-bottom: 50px solid transparent;
+  border-left: 90px solid #fff;
+  border-right: 90px solid #fff;
+}
+.hex_pic .hexa8::after{
+  width: 0px;
+  height: 0px;
+  border-top: 50px solid transparent;
+  border-left: 90px solid #fff;
+  border-right: 90px solid #fff;
+  position: absolute;
+  top: 76%;
+  left: 0px;
+}
+/* ========================================= hexagon 9 ===========================================  */
+.hex_pic .hexa9{
+  width: 180px;
+  height:205px;
+  background-image: url(images/h9.png);
+  background-size: cover;
+  background-position: center;
+  margin-right:20px;
+  position: relative;
+}
+.hex_pic .hexa9::before{
+  width: 0px;
+  height: 0px;
+  border-bottom: 50px solid transparent;
+  border-left: 90px solid #fff;
+  border-right: 90px solid #fff;
+}
+.hex_pic .hexa9::after{
+  width: 0px;
+  height: 0px;
+  border-top: 50px solid transparent;
+  border-left: 90px solid #fff;
+  border-right: 90px solid #fff;
+  position: absolute;
+  top: 76%;
+  left: 0px;
+}
+/* ========================================= hexagon 10 ===========================================  */
+.hex_pic .hexa10 {
+  width: 180px;
+  height:205px;
+  background-image: url(images/h10.png);
+  background-size: cover;
+  background-position: center;
+  margin-right:20px;
+  position: relative;
+}
+.hex_pic .hexa10::before{
+  width: 0px;
+  height: 0px;
+  border-bottom: 50px solid transparent;
+  border-left: 90px solid #fff;
+  border-right: 90px solid #fff;
+}
+.hex_pic .hexa10::after{
+  width: 0px;
+  height: 0px;
+  border-top: 50px solid transparent;
+  border-left: 90px solid #fff;
+  border-right: 90px solid #fff;
+  position: absolute;
+  top: 76%;
+  left: 0px;
+}
+/* ========================================= hexagon 11 ===========================================  */
+.hex_pic .hexa11{
+  width: 180px;
+  height:205px;
+  background-image: url(images/h11.png);
+  background-size: cover;
+  background-position: center;
+  margin-right:20px;
+  position: relative;
+}
+.hex_pic .hexa11::before{
+  width: 0px;
+  height: 0px;
+  border-bottom: 50px solid transparent;
+  border-left: 90px solid #fff;
+  border-right: 90px solid #fff;
+}
+.hex_pic .hexa11::after{
+  width: 0px;
+  height: 0px;
+  border-top: 50px solid transparent;
+  border-left: 90px solid #fff;
+  border-right: 90px solid #fff;
+  position: absolute;
+  top: 76%;
+  left: 0px;
+}
+/* ========================================= hexagon 12 ===========================================  */
+.hex_pic .hexa12{
+  width: 180px;
+  height:205px;
+  background-image: url(images/h12.png);
+  background-size: cover;
+  background-position: center;
+  margin-right:20px;
+  position: relative;
+}
+.hex_pic .hexa12::before{
+  width: 0px;
+  height: 0px;
+  border-bottom: 50px solid transparent;
+  border-left: 90px solid #fff;
+  border-right: 90px solid #fff;
+}
+.hex_pic .hexa12::after{
+  width: 0px;
+  height: 0px;
+  border-top: 50px solid transparent;
+  border-left: 90px solid #fff;
+  border-right: 90px solid #fff;
+  position: absolute;
+  top: 76%;
+  left: 0px;
+}
+
+/* ========================================= hexagon 13 ===========================================  */
+.hex_pic .hexa13{
+  width: 180px;
+  height:205px;
+  background-image: url(images/h13.png);
+  background-size: cover;
+  background-position: center;
+ 
+  position: relative;
+}
+.hex_pic .hexa13::before{
+  width: 0px;
+  height: 0px;
+  border-bottom: 50px solid transparent;
+  border-left: 90px solid #fff;
+  border-right: 90px solid #fff;
+}
+.hex_pic .hexa13::after{
+  width: 0px;
+  height: 0px;
+  border-top: 50px solid transparent;
+  border-left: 90px solid #fff;
+  border-right: 90px solid #fff;
+  position: absolute;
+  top: 76%;
+  left: 0px;
+}
+
+.hex_pic hr{
+  border-bottom: 1px solid #ccc;
+  border-top: none;
+  border-top: none;
+  border-top: none;
+  margin: auto;
+  width: 95%;
+  margin-top: 70px;
+}
+.hexagon_section >hr{
+  width: 95%;
+  margin: auto;
+  margin-top: 70px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #e4e9eb;
+}
+/*=========================================================
+                        portfolio section
+=========================================================*/
+
+.portfolio{
+  width: 1020px;
+  margin: auto;
+  background-color: #2eb398;
+  padding: 15px 0px;
+}
+.portfolio .mid{
+  width: 80%;
+  margin: auto;
+  padding: 65px 0px;
+  border-left: .5px solid #219d84;
+  border-right: .5px solid #219d84;
+  display: flex;
+}
+.portfolio .mid .img{
+  width:180px ;
+  height:205px ;
+  background-image: url(images/hpic.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin: 0px 20px;
+}
+.portfolio .mid .img::before{
+  width: 0px;
+  height: 0px;
+  border-bottom: 50px solid transparent;
+  border-left: 90px solid #2eb398;
+  border-right: 90px solid #2eb398;
+}
+.portfolio .mid .img::after{
+  width: 0px;
+  height: 0px;
+  border-top: 50px solid transparent;
+  border-left: 90px solid #2eb398;
+  border-right: 90px solid #2eb398;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+ 
+}
+.portfolio .mid .info{
+  width: 70.7%;
+  overflow: hidden;
+}
+.portfolio .mid .info h2{
+  font-family: MavenPro-Regular;
+  font-size: 30px;
+  color: #d7fcf5;
+  font-weight: normal;
+}
+.portfolio .mid .info h3{
+  font-family: MavenPro-Regular;
+  font-size: 18px;
+  color: #20816d;
+  margin-top: 5px;
+  font-weight: normal;
+}
+.portfolio .mid .info p{
+  font-family: lato-Regular;
+  font-size: 12px;
+  color: #d7fcf5;
+  line-height: 2em;
+  text-align: justify;
+  margin: 15px 0px;
+}
+.portfolio .mid .info ul{
+  float: right;
+  margin: 40px 0px 0px;
+  overflow: hidden;
+  
+}
+.portfolio .mid .info ul li{
+  float: left;
+  padding: 5px 8px;
+}
+.portfolio .mid .info ul li a{
+  color: #00ab94;
+}
+.portfolio .mid .info ul li:nth-child(1){
+  background-color: #a4dbd4;
+  padding: 5px 10px;
+}
+.portfolio .mid .info ul li:nth-child(2){
+  background-color:#6ccbbe ;
+}
+.portfolio .mid .info ul li:nth-child(3){
+  background-color:#7ed0c5 ;
+}
+.portfolio .mid .info ul li:nth-child(4){
+  background-color:#abddd7 ;
+}
+.portfolio .mid .info ul li:nth-child(5){
+  background-color:#acddd7 ;
+}
+.portfolio .mid .info ul li:nth-child(6){
+  background-color:#6dcbbe ;
+}
+/*=========================================================
+                        portfolio section
+=========================================================*/
+.contact_page{
+  max-width: 1020px;
+  width: 100%;
+  margin: auto;
+  background-color: #323232;
+  overflow: hidden;
+}
+.contact_page .mid{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  margin-bottom: 45px;
+}
+.contact_page >hr{
+  width: 95%;
+  margin: 10px auto 10px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #2b2b2b;
+}
+.contact_page h2{
+  font-family: MavenPro-Regular;
+  font-size: 30px;
+  color: #e0e0e0;
+  font-weight: normal;
+  margin-top: 40px;
+}
+.contact_page h3{
+  font-family: MavenPro-Regular;
+  font-size: 18px;
+  color: #b7b7b7;
+  margin-top: 5px;
+  font-weight: normal;
+}
+.contact_page .mid .form{
+  width: 65%;
+  float: left;
+  overflow: hidden;
+}
+.contact_page .mid .more{
+  width: 29%;
+  float: left;
+}
+.contact_page .mid .form form input{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: #454545;
+  color: #b7b7b7;
+  border: none;
+  font-family: lato-Regular;
+  font-size: 12px;
+}
+.contact_page .mid .form form textarea{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: #454545;
+  color: #b7b7b7;
+  border: none;
+  font-family: lato-Regular;
+  font-size: 12px;
+}
+.contact_page .mid .form form input:nth-child(5){
+  width: 15%;
+  background-color: #2eb398;
+  text-transform: uppercase;
+  font-family: Lato-Bold;
+  color: #d7fcf5;
+  float: right;
+  cursor: pointer;
+}
+.contact_page .mid .more{
+  margin: 10px 20px;
+}
+.contact_page .mid .more p{
+  font-family: lato-Regular;
+  font-size: 12px;
+  line-height: 2em;
+  text-align: justify;
+  color:#b7b7b7 ;
+  font-weight: normal;
+  width: 95%;
+}
+.contact_page .mid .more p span{
+  font-family: Lato-Bold;
+  display: inline-block;
+  color: #e0e0e0;
+}
+.contact_page .mid .more .contact{
+  margin-top: 45px;
+}
+.contact_page .mid .more .contact i{
+  color: #2eb398;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.contact_page .mid .more .contact a{
+  font-family: lato-Regular;
+  font-size: 12px;
+  line-height: 2em;
+  color:#b7b7b7;
+  font-weight: normal;
+}
+.contact_page .mid .more .contact a:nth-child(1) i{
+  margin-right: 12px;
+}
+
+/*=========================================================
+                        footer section
+=========================================================*/
+.footer{
+  max-width: 1020px;
+  width: 100%;
+  margin: auto;
+  background-color: #222222;
+  padding: 12px;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+ 
+}
+.footer footer{
+  font-family:MavenPro-Regular ;
+  font-size: 12px;
+  color: #454545;
+ margin-left: 20px;
+}
